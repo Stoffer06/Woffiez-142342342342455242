@@ -2,41 +2,14 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Woffiez's Website - HOME</title>
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <p id="demo"></p>
-
-    <script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("July 22, 2020 15:45:00 GMT+1").getTime();
-
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
-      // Get today's date and time
-      var now = new Date().getTime();
-
-      // Find the distance between now and the count down date
-      var distance = countDownDate - now;
-
-      // Time calculations for days, hours, minutes and seconds
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      // Display the result in the element with id="demo"
-      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-      + minutes + "m " + seconds + "s ";
-
-      // If the count down is finished, write some text
-      if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = "Its out very soon";
-      }
-    }, 1000);
-    </script>
+    <ul>
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="download.html">Download</a></li>
+</ul>
+    <h1 class="txt">Woffiez Website</h1>
   </body>
 </html>
